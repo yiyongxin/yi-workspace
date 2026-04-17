@@ -146,3 +146,12 @@ target_link_libraries(platform_gateway
 - 序列化：FlatBuffers（.fbs）
 - 配置：YAML
 - 版本控制：Git 多仓库 + 工作台仓库聚合 + 语义化版本标签
+
+## 9. Agents 与 工具链文档
+
+项目将自定义 agent 文档集中放在 `docs/`，便于团队查阅与维护。当前文档：
+
+- [Agents 说明](docs/agents.md) — 自定义 agent 列表与使用说明
+- [代码审查规则](docs/code-review.md) — 初版代码审查清单与建议
+
+建议：将 `docs/` 配置到项目静态站点（例如 MkDocs 或 GitHub Pages）以便更好地展示。

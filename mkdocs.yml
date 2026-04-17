@@ -1,0 +1,8 @@
+site_name: yi-workspace Docs
+nav:
+  - Home: index.md
+  - Agents: agents.md
+  - Code Review: code-review.md
+docs_dir: docs
+theme:
+  name: material

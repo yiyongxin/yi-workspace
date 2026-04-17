@@ -1,18 +1,23 @@
+# 框架层
 [submodule "framework/yi-core"]
 	path = framework/yi-core
-	url = https://github.com/your-org/yi-core.git
-[submodule "framework/yi-modules"]
-	path = framework/yi-modules
-	url = https://github.com/your-org/yi-modules.git
-[submodule "protocols"]
-	path = protocols
-	url = https://github.com/your-org/protocols.git
-[submodule "apps/platform-gateway"]
-	path = apps/platform-gateway
-	url = https://github.com/your-org/platform-gateway.git
-[submodule "apps/lower-platform"]
-	path = apps/lower-platform
-	url = https://github.com/your-org/lower-platform.git
-[submodule "apps/superior-platform"]
-	path = apps/superior-platform
-	url = https://github.com/your-org/superior-platform.git
+	url = https://github.com/yiyongxin/yi-core.git
+# [submodule "framework/yi-modules"]
+# 	path = framework/yi-modules
+# 	url = https://github.com/yiyongxin/yi-modules.git
+
+# 协议层
+# [submodule "protocols"]
+# 	path = protocols
+# 	url = https://github.com/yiyongxin/protocols.git
+
+# 业务服务
+# [submodule "apps/platform-gateway"]
+# 	path = apps/platform-gateway
+# 	url = https://github.com/yiyongxin/platform-gateway.git
+# [submodule "apps/lower-platform"]
+# 	path = apps/lower-platform
+# 	url = https://github.com/yiyongxin/lower-platform.git
+# [submodule "apps/superior-platform"]
+# 	path = apps/superior-platform
+# 	url = https://github.com/yiyongxin/superior-platform.git
