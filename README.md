@@ -30,7 +30,7 @@
 ## 2. 仓库清单
 
 | 仓库 | 内容 | 更新频率 | 初始版本 |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | yi-core | 协程、调度、基础类型、序列化抽象 | 极低 | v0.0.1 |
 | yi-modules | 通用组件 + 业务基础（错误码/常量/工具） | 中 | v0.0.1 |
 | protocols | 跨服务共享协议定义（.fbs）及生成代码 | 高 | v0.0.1 |
@@ -123,7 +123,7 @@ target_link_libraries(platform_gateway
 ## 6. 开发工作流
 
 | 场景 | 操作 |
-|---|---|
+| --- | --- |
 | 仅开发业务服务 | 在工作区 apps/ 下对应服务目录执行 CMake 构建，依赖自动从 Git 拉取 |
 | 联调 L1/L2 | 修改 framework/yi-modules 或 protocols 源码，业务服务直接重编译生效 |
 | 升级依赖版本 | 修改业务服务 CMakeLists.txt 中的 GIT_TAG，提交变更 |
@@ -133,10 +133,10 @@ target_link_libraries(platform_gateway
 ## 7. 命名约定
 
 | 元素 | 格式 | 示例 |
-|---|---|---|
+| --- | --- | --- |
 | C++ 命名空间 | yi:: | yi::Task\<T\> |
 | 基础类型子空间 | yi::common:: | yi::common::ByteBuffer |
-| CMake 目标 | yi::core、yi::modules、yi::protocols | `target_link_libraries(... yi::core)` |
+| CMake 目标 | yi::core、yi::modules、yi::protocols | yi::core |
 | 头文件包含 | \<yi/模块/头文件.hpp\> | `#include <yi/coro/task.hpp>` |
 
 ## 8. 技术栈
@@ -145,7 +145,7 @@ target_link_libraries(platform_gateway
 - 构建：CMake 3.24+ + FetchContent
 - 序列化：FlatBuffers（.fbs）
 - 配置：YAML
-- 版本控制：Git 多仓库 + 工作台仓库聚合 + 语义化版本标签
+- 版本控制：Git（子模块） + 语义化版本
 
 ## 9. Agents 与 工具链文档
 

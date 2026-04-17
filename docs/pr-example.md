@@ -6,7 +6,7 @@
 
 示例 PR 标题：
 
-```
+```text
 docs: add example PR linking code review rules
 ```
 
@@ -17,6 +17,7 @@ docs: add example PR linking code review rules
 - 影响范围：文档，仅 docs/ 目录
 
 检查清单：
+
 - [x] 变更说明与目的清晰
 - [x] 单元/集成测试无影响
 - [x] 静态检查（linter/formatter）通过（文档无需运行）

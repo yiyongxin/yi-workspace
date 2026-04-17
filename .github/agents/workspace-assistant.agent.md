@@ -44,6 +44,17 @@ user-invocable: true
 - 为常用任务创建对应的 `*.prompt.md` 供快速调用
 - 如需强制性检查，添加 `hooks` 在保存前运行 linters/formatters
 
+## 写 Markdown 时的快速要点（避免 markdownlint 报警）
+
+- 在所有标题（`#`、`##`、`###`）上下保留一个空行，修复 MD022。
+- 列表前后保留空行，确保列表与段落/代码块间有间隔，修复 MD032。
+- 为代码块指定语言（例如 ```bash、```text、```cpp），修复 MD040。
+- 保持行长默认不超过 80 字符；必要时拆行或缩短示例，修复 MD013。
+- 表格语法要规范，避免多余字符和错误的分隔行。
+- 推荐在 CI 中加入 `markdownlint-cli` 检查（示例 workflow 存在于工作台记录中）。
+
+这些要点已记录到仓库沉淀（`/memories/repo/markdownlint-guidelines.md`）。
+
 ---
 
 <!-- 文件由工作台助理生成并由请求者确认移动 -->
