@@ -1,0 +1,18 @@
+[submodule "framework/yi-core"]
+	path = framework/yi-core
+	url = https://github.com/your-org/yi-core.git
+[submodule "framework/yi-modules"]
+	path = framework/yi-modules
+	url = https://github.com/your-org/yi-modules.git
+[submodule "protocols"]
+	path = protocols
+	url = https://github.com/your-org/protocols.git
+[submodule "apps/platform-gateway"]
+	path = apps/platform-gateway
+	url = https://github.com/your-org/platform-gateway.git
+[submodule "apps/lower-platform"]
+	path = apps/lower-platform
+	url = https://github.com/your-org/lower-platform.git
+[submodule "apps/superior-platform"]
+	path = apps/superior-platform
+	url = https://github.com/your-org/superior-platform.git
