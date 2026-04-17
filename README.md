@@ -22,7 +22,7 @@
 └─────────────────────────────┬───────────────────────────────┘
                               │
 ┌─────────────────────────────▼───────────────────────────────┐
-│  framework/yi-core        核心框架层（极低频率）              │
+│  framework/core        核心框架层（极低频率）              │
 │  协程 · 调度器 · 序列化抽象 · 基础类型（Bytes/Units等）       │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -44,7 +44,7 @@
 yi-workspace/                       # 工作台仓库（Git 子模块聚合）
 ├── .gitmodules
 ├── framework/
-│   ├── yi-core/                    # [子模块] L0
+│   ├── core/                    # [子模块] L0
 │   └── yi-modules/                 # [子模块] L1
 ├── protocols/                      # [子模块] L2
 ├── apps/                           # L3 业务服务
@@ -92,7 +92,7 @@ set(LOCAL_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../..")
 FetchContent_Declare(yi_core
     GIT_REPOSITORY https://github.com/your-org/yi-core.git
     GIT_TAG v0.0.1
-    SOURCE_DIR ${LOCAL_ROOT}/framework/yi-core
+    SOURCE_DIR ${LOCAL_ROOT}/framework/core
 )
 
 # 引入 L1

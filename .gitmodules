@@ -1,6 +1,6 @@
 # 框架层
-[submodule "framework/yi-core"]
-	path = framework/yi-core
+[submodule "framework/core"]
+	path = framework/core
 	url = https://github.com/yiyongxin/yi-core.git
 # [submodule "framework/yi-modules"]
 # 	path = framework/yi-modules
