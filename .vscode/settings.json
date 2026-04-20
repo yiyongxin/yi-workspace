@@ -8,5 +8,6 @@
         "**/Thumbs.db": true,
         "**/.cache": true,
         "**/build": true,
-    }
+    },
+    "cmake.sourceDirectory": "/home/project/yi/yi-workspace/framework/core"
 }
